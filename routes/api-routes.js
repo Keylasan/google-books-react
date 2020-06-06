@@ -6,7 +6,7 @@ const documents = require("../models/bookSearch")
 
 module.exports = function(app){
 
-    app.get("./api/books", function (req, res){
+    app.get("/api/books", function (req, res){
         documents.find().then(data =>{
             res.json(data)
         })
@@ -14,4 +14,12 @@ module.exports = function(app){
             res.json(err)
         })
     })
+
+    app.post("/api/books", function (req, res){
+        documents.create({}).then(data => res.json(data))
+})
+.catch(err =>{
+    res.json(err)
+})
+
 }
