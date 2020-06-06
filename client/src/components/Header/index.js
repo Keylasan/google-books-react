@@ -10,7 +10,7 @@ function Header() {
       <div class="row align-items-center my-5">
         <div class="col-lg-5">
           <h1 class="font-weight-light">(REACT) Google Books Search </h1>
-          <p>Search For And Find Books Of Interest</p>
+          <h2>Search For And Find Books Of Interest</h2>
         </div>
       </div>
     </div>

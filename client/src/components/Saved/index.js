@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function Results() {
+function Saved() {
   return (
+       
     <div className="about">
     <div class="container">
       <div class="row align-items-center my-5">
@@ -15,7 +16,7 @@ function Results() {
           />
         </div>
         <div class="col-lg-5">
-          <h1 class="font-weight-light"> Your Search Results</h1>
+          <h1 class="font-weight-light"> Your Saved Books</h1>
           <h2 class="font-weight-light"></h2>
           <p>
             Lorem Ipsum is simply dummy text o
@@ -27,4 +28,4 @@ function Results() {
 );
 }
 
-export default Results;
+export default Saved;
