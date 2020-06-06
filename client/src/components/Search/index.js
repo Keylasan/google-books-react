@@ -5,7 +5,7 @@ import "./style.css";
 function Search() {
   return (
        
-    <div className="about">
+    <div className="search">
     <div class="container">
       <div class="row align-items-center my-5">
         <div class="col-lg-7">
@@ -16,8 +16,8 @@ function Search() {
           />
         </div>
         <div class="col-lg-5">
-          <h1 class="font-weight-light">Addiction</h1>
-          <h2 class="font-weight-light">and Substance Abuse</h2>
+          <h1 class="font-weight-light">Search Your Favorite Books</h1>
+          <h2 class="font-weight-light"></h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
