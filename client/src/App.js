@@ -1,28 +1,24 @@
-import React, { Component } from "react";
-import react from "react";
-import "./App.css";
-import Search from "./components/Search";
-import Navbar from "./components/Navbar";
-import Results from "./components/Results";
-import Header from "./components/Header";
+import React from "react";
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Link } from "react-router-dom";
+import "./App.css";
+
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Search from "./components/Search";
 import Saved from "./components/Saved";
+import Test from "./components/Test";
+
 function App() {
   return (
-    <div className="App">
-     <Router>
-<Navbar />
-<Header />
-<Route exact path="/" component={Search} />
-        <Route exact path="/search" component={Search} />
+    <Router>
+      <Navbar />
+      <Hero />
+        <Route exact path="/" component={Test} />
+        <Route exact path="/search" component={Test} />
         <Route exact path="/saved" component={Saved} />
-        <Route exact path="/results" component={Results} />
-
-
-     </Router>
-     
-    </div>
+      <Footer />
+    </Router>
   );
 }
 
